@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+} 
+
+body { 
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #fff; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+
+nav img {
+    width: 70px;
+     
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+nav ul li a {
+    color: #000000c0;
+    text-transform: uppercase;
+    margin-left: 25px;
+    padding: 10px 20px;
+    background: #fff;
+    transition: 0.5s;
+    font-size: 0.8rem;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    
+    
+}
+
+nav ul li a:hover {
+    background: #038c68;
+    color: #fff;
+}
+
+nav .naav {
+    color: rgb(42, 194, 194);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1rem;
+    border-bottom: 2.5px solid aqua;
+    padding-bottom: 2.5px;
+}
+
+/* Home Page */
+
+#home {
+    width: 100%;
+    height: 750px;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 70px;
+}
+
+
+#home .model {
+    width: 500px;
+    height: 600px;
+
+}
+
+#home .model img {
+    width: 100%;
+    object-fit: contain;
+    /* margin-left: 125px; */
+    /* margin-top: 130px; */
+    
+}
+
+#home .contenct {
+    width: 600px;
+    /* margin: 250px 0 0 50px; */
+    margin-left: 50px;
+}
+
+#home .contenct h1 {
+    font-size: 3.5rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #000000c7;
+}
+
+#home .contenct p {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    color: #00000078;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+#home .contenct a {
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 30px;
+    background:#038c68;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+#home .contenct a:hover {
+    background: #28c59b;
+    color: #1f1d1d;
+}
+
+/* Skill Section */
+
+#skill {
+    width: 100%;
+    height: 700px;
+    /* background-color: #038c68; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#skill .skillcon {
+    width: 400px;
+    height: 450px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #skill .skillcon h5,h1 {
+  align-self: self-start;
+  justify-self: self-start;
+    
+} */
+
+#skill .skillcon h5 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #62f8d0;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+#skill .skillcon h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 0.25rem;
+}
+
+#skill .skillcon div {
+    width: 350px;
+    height: 110px;
+    margin-bottom: 30px;
+    /* background-color: #7fffd4; */
+
+}
+
+#skill .skillcon .text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#skill .skillcon .text .skicon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #efebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 .skicon i {
+    size: 45px;
+}
+
+#skill .skillcon .text .sktext {
+    width: 275px;
+    height: 80px;
+    /* background: #d03030; */
+    padding-top: 15px;
+}
+
+#skill .skillcon .text .sktext h4 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+#skill .skillcon .text .sktext p {
+    font-size: 0.9rem;
+    color: #0d0d0d99;
+    line-height: 1rem;
+
+}
+
+#skill .skillimg {
+    width: 650px;
+    height: auto;
+    /* background-color: #28c59b; */
+}
+
+.skillimg img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Recent Section */
+#recent  {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#recent h3 {
+    font-size: 1.7rem;
+    font-weight: normal;
+    color: #62f8d0;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+#recent h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 0.25rem;
+
+}
+
+#recent a {
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 45px;
+    background:#038c68;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+#recent a:hover {
+    background: #28c59b;
+}
+
+#client {
+    width: 100%;
+    height: 750px;
+    /* background: #186ca9; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#client h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #62f8d0;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+#client h1{
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 0.25rem;
+}
+
+#client .cards {
+    width: 80%;
+    height: 400px;
+    /* background: #54e5a6; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#client .cards .clientcard {
+    width: 300px;
+    height: 320px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px  rgba(0, 0, 0, 0.2);
+    background: #ffffffe1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#client .cards .clientcard:hover {
+    transform: translateY(-20px);
+    background-color:#62f8d0; 
+}
+
+#client .cards .clientcard img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#client .cards .clientcard div {
+    display: flex;
+
+}
+
+#client .cards .clientcard p {
+    font-size: 0.9rem;
+    text-align: center;
+    height: 85px;
+    width: 240px;
+    line-clamp: 4;
+    overflow: hidden;
+    color: #1f1d1dcf;
+}
+
+#client .cards .clientcard a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #038c68;
+}
+
+#contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+#contact img {
+    width: 400px;  
+}
+
+#contact h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+#contact .contactbox {
+    width: 350px;
+    height: 50px;
+    /* background: #df7676; */
+    /* padding: 20px 40px; */
+    border-radius: 35px;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contact .contactbox input {
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+#contact .contactbox a {
+    padding: 7px 18px;
+    border-radius: 25px;
+    background: #28c59b;
+    color: #fff;
+    font-size: 0.8rem;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: #3c3a3ac8;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    nav img {
+        width: 50px;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+        margin-left: 10px;
+    
+    }
+
+    nav .naav {
+        font-size: 0.8rem;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    #home .model {
+        width: 320px;
+        height: auto;
+    }
+
+    #home .contenct {
+        width: 400px;
+        margin: 0 20px;
+    }
+
+    #home .contenct h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    #home .contenct p {
+        font-size: 0.8rem;
+        letter-spacing: 0.007rem;
+    }
+
+    #home .contenct a {
+        font-size: 11px;
+
+    }
+}
